@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "test": "DB_FILE=test.sqlite node -r ./database/seed.js --test",
+    "test:1": "DB_FILE=test.sqlite node -r ./database/seed.js test/one.test.js",
+    "test:2": "DB_FILE=test.sqlite node -r ./database/seed.js test/two.test.js",
+    "test:3": "DB_FILE=test.sqlite node -r ./database/seed.js test/three.test.js",
+    "test:4": "DB_FILE=test.sqlite node -r ./database/seed.js test/four.test.js",
+    "test:5": "DB_FILE=test.sqlite node -r ./database/seed.js test/five.test.js"
+  },
+  "volta": {
+    "node": "18.16.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.6.2"
+  }
+}
